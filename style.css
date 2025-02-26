@@ -99,6 +99,15 @@ label, span {
     background-color: #d8d8d8;
 }
 
+#copy_label {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+#copy_icon {
+    width: 1rem;
+}
+
 textarea {
     resize: none;
     width: 100%;

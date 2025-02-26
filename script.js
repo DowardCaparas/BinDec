@@ -1,6 +1,8 @@
 const userInput = document.getElementById("user_input");
 const result = document.getElementById("result");
 const copyResult = document.getElementById("copy_result")
+const copyLabel = document.getElementById("copy_label");
+const copy_icon = document.getElementById("copy_icon");
 
 // function to accept only numbers
 const validateInput = (event) => {
@@ -20,6 +22,8 @@ const updateResult = () => {
     result.innerText = parseInt(input).toString(2);
   }
 
+  copy_icon.src = "/copy.svg" //update the icon
+  copyLabel.innerText = "Copy";
 };
 
 const copyToClipboard = () => {
@@ -29,7 +33,10 @@ const copyToClipboard = () => {
   if(resultText){
     // Copy the result to the clipboard
     navigator.clipboard.writeText(resultText).then(() => {
-      alert("Result copied to the clipboard");
+
+      copy_icon.src = "/check.svg"  //update the icon
+      copyLabel.innerText = "Copied";
+       
     }).catch((err) => {
       alert("Error copying result: ", err)
     })
