@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.01rem;
+}
+
+nav {
+    background-color: #1b1b1b;
+    padding: 0.7rem 4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav > span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+body {
+    background-color: #ececec;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.hero_text {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+p, span, label {
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+}
+
+label, span {
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    padding: 3rem 4rem;
+    gap:5rem;
+    margin-bottom: 2rem;
+}
+
+.converter {
+    padding: 1rem;
+    background-color: #cecece;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 10px #6b6b6b;
+}
+
+.user_input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+}
+
+.result_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#copy_result {
+    border: none;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#copy_result:hover {
+    background-color: #eeeeee;
+}
+
+#copy_result:active {
+    background-color: #d8d8d8;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 18rem;
+    padding: 1rem;
+    background-color: #000;
+    color: #00ff15;
+    font-size: 1rem;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1080px) {
+    .container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding: 1rem;
+    }
+    nav {
+        background-color: #000;
+        padding: 1rem;
+        color: #fff;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+}

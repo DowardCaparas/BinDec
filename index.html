@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BinDec Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="/arrow-left-right.svg" alt="vice versa icon" />
+      <span>BinDec</span>
+    </nav>
+    <div class="container">
+      <div class="hero_text">
+        <h1>"Effortless Conversion: Decimal to Binary and Vice Versa"</h1>
+        <p>
+          With BinDec, converting between decimal and binary is quick and
+          easy. Whether you need to switch from binary to decimal or vice versa,
+          this app makes it seamless and fast.
+        </p>
+        &copy; 2025 Dounhuward B. Caparas
+      </div>
+
+      <div class="converter">
+        <label for="user_input">Enter a decimal or binary</label>
+        <input
+          id="user_input"
+          type="text"
+          class="user_input"
+          oninput="validateInput(event)"
+        />
+        <div class="result_head">
+          <span>Result:</span>
+          <button id="copy_result" data-hover-text="Copy">
+            <img src="/copy.svg" alt="copy icon" />
+            Copy
+          </button>
+        </div>
+        <textarea id="result" readonly></textarea>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
