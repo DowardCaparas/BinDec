@@ -15,25 +15,29 @@
       <div class="hero_text">
         <h1>"Effortless Conversion: Decimal to Binary and Vice Versa"</h1>
         <p>
-          With BinDec, converting between decimal and binary is quick and
-          easy. Whether you need to switch from binary to decimal or vice versa,
-          this app makes it seamless and fast.
+          With BinDec, converting between decimal and binary is quick and easy.
+          Whether you need to switch from binary to decimal or vice versa, this
+          app makes it seamless and fast.
         </p>
         &copy; 2025 Dounhuward B. Caparas
       </div>
 
       <div class="converter">
-        <label for="user_input">Enter a decimal or binary</label>
+        <label id="input_label" for="user_input">Type a decimal to convert in binary</label>
         <input
           id="user_input"
           type="text"
           class="user_input"
           oninput="validateInput(event)"
         />
+        <div class="flex">
+          <button id="decimal_to_binary">Decimal to Binary</button>
+          <button id="binary_to_decimal">Binary to Decimal</button>
+        </div>
         <div class="result_head">
           <span>Result:</span>
           <button id="copy_result" data-hover-text="Copy">
-            <img id="copy_icon" src="/copy.svg" alt="copy icon"/>
+            <img id="copy_icon" src="/copy.svg" alt="copy icon" />
             <span id="copy_label">Copy</span>
           </button>
         </div>
